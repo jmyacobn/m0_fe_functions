@@ -3,7 +3,7 @@
 // YOUR TASK:
   // Modify the code to make that improvement(s)
   // write a JS comment to explain what you changed, and why
-  // make sure the code you submit WORKS - you can run this entire file 
+  // make sure the code you submit WORKS - you can run this entire file
     // using `node cleanUp.js` or copy and paste into a replit
 
 
@@ -14,33 +14,48 @@ function nameQuestion() {
 
 nameQuestion()
 
+// No changes identified.
 
 // EX 2:
 function addThreeNums(first, second, third) {
-var sum = first + second + third
-console.log(sum);
-      }
+  var sum = first + second + third
+  console.log(sum);
+}
 
 addThreeNums(1, 2, 3);
 addThreeNums(4, 2, 7);
 
+// Indent var sum and console.log
+// Remove indents from close bracket
 
 // EX 3:
-func makeFreshPesto(){
+function makeFreshPesto() {
   console.log("Buy ingredients: basil, parmesan, romano, olive oil, pine nuts, garlic, salt, pepper");
   console.log("Pulse basil and pine nuts");
   console.log("Add garlic and cheeses");
   console.log("Slowly pour in oil");
-  console.log("Season");    }
+  console.log("Season");
+}
 
 makeFreshPesto();
 
+// Replaced func with function; otherwise, the function is not defined and code will not work.
+// Add space between parentheses and open bracket
+// Hard return before close bracket
 
 //  EX 4:
-function average(num1, num2) 
-  {
-var sum = num1 + num2;
-    var avg = sum / 2;
-
-  console.log(`the average is: ${avg}`.)
+function average(num1, num2) {
+  var sum = num1 + num2;
+  var avg = sum / 2;
+  console.log(`The average is: ${avg}.`)
   }
+
+average(52, 104);
+
+// Move the first open bracket up
+// indent var sub
+// line up var avg with var sum after indenting
+// remove hard return between var avg and console.log
+// Capitalize the word "The"
+// Moved period from outside the tick mark to inside tick mark
+// Add a line to call the function
