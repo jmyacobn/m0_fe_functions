@@ -17,22 +17,28 @@ function greetMe(firstName, lastName) {
 greetMe("Jennifer", "Yacoubian");
 
 // 3: Write a function that has 3 parameters: a string and two numbers.
-//The String will be the name of a company, and the numbers will represent the minimum and maximum of a pay range for a posted job.
+//The String will be the name of a company, and the numbers will represent the minimum
+//and maximum of a pay range for a posted job.
 //The function should print out a sentence that includes the name of the company and the range itself
 //(if the numbers passed in are 90000 and 110000, the pay range is 20000).
-function salary(companyName, minPay, maxPay)
+function salary(companyName, minPay, maxPay) {
+  var diff = maxPay - minPay;
+  console.log(`For this position at ${companyName}, the pay range will be $${diff}.`)
+}
+
+salary("CodingRUs", 90000, 110000)
 
 
 // 4: Write a function that satifies the following interaction pattern:
 function checkStock(quantity, item) {
     if (quantity >= 4) {
-  console.log(`${item} is stocked`)
+  console.log(`"${item} is stocked"`)
 }
     else if (quantity > 0) {
-  console.log(`${item} - running LOW`)
+  console.log(`"${item} - running LOW"`)
 }
     else {
-  console.log(`${item} - OUT of stock!`)
+  console.log(`"${item} - OUT of stock!"`)
 }
 }
 
